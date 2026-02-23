@@ -1,32 +1,17 @@
-def celsius_to_fahrenheit(degrees: int) -> float:
-    return (degrees * 9 / 5) + 32
+my_numbers: list[float] = []
+my_numbers.append(1.5)
+my_numbers.append(3.2)
+print(my_numbers)
 
+game_points: list[int] = [102, 86, 94]
+game_points[1] = 72
+print(game_points)
+print(game_points[2])
 
-def perimeter(length: float, width: float) -> float:
-    """calculate the perimeter of a rectangle"""
-    return length * 2 + width * 2
+name: str = "Izzy"
 
+name_list: list[str] = list(name)
+print(name_list)
+name_list[3] = "i"
+print(name_list)
 
-def total_cost(price: int, tax_rate: float) -> float:
-    return price + (price * tax_rate)
-
-
-print(total_cost(price=100, tax_rate=0.07))
-
-
-def fuel_needed(distance: int, mpg: int) -> float:
-    return distance / mpg
-
-
-def total_fuel_cost(distance: int, mpg: int, price_per_gallon: int) -> float:
-    return fuel_needed(distance=distance, mpg=mpg) * price_per_gallon
-
-
-print(total_fuel_cost(distance=300, mpg=25, price_per_gallon=4))
-
-
-def pos_or_neg(num: int) -> str:
-    if num > 0:
-        return "Positive"
-    else:
-        return "Negative"
