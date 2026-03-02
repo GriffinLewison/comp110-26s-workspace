@@ -1,17 +1,13 @@
-my_numbers: list[float] = []
-my_numbers.append(1.5)
-my_numbers.append(3.2)
-print(my_numbers)
+names: list[str] = ["Alice", "Bob", "Charlie", "David"]
 
-game_points: list[int] = [102, 86, 94]
-game_points[1] = 72
-print(game_points)
-print(game_points[2])
+names[1] = "Kai"
 
-name: str = "Izzy"
+names.append("Griffin")
+names.insert(0, "Zach")
+names.pop(1)
+names.pop()
+names.remove("Kai")
 
-name_list: list[str] = list(name)
-print(name_list)
-name_list[3] = "i"
-print(name_list)
+print(len(names))
 
+print(names)
